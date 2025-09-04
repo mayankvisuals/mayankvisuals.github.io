@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Kumar - Android Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* gray-900 */
+        }
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            background-color: #374151; /* gray-700 */
+            color: #F3F4F6; /* gray-100 */
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-badge:hover {
+            background-color: #1F2937; /* gray-800 */
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar for a sleeker look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1F2937;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4B5563;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6B7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <!-- Header / Navbar -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Mayank Kumar</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <a href="https://www.github.com/mayankvisuals" target="_blank" class="hidden md:inline-block bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 border border-gray-700 hover:border-gray-600">
+                GitHub
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white">
+                        Hi, I'm Mayank Kumar
+                    </h1>
+                    <h2 class="text-2xl md:text-4xl font-semibold text-gray-400 mt-2">
+                        An Android Developer.
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-400 max-w-xl">
+                        I build intuitive, robust, and user-friendly mobile applications. Passionate about leveraging modern technologies to solve real-world problems and create seamless digital experiences.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start gap-4">
+                        <a href="#contact" class="bg-gray-200 hover:bg-white text-gray-900 font-bold py-3 px-6 rounded-lg transition-transform duration-200 transform hover:scale-105">
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-200 transform hover:scale-105 border border-gray-700">
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+                <!-- Photo -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-700 shadow-2xl">
+                        <img src="https://s14.gifyu.com/images/bTkYn.jpg" alt="Mayank Kumar's Photo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-4">About Me</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
+                As a developer, I am driven by my enthusiasm for mobile technology. I specialize in Android development using Kotlin and have a strong foundation in core programming languages. I enjoy turning complex problems into simple, beautiful, and intuitive applications.
+            </p>
+            <div class="bg-gray-800/50 p-8 rounded-xl shadow-2xl border border-gray-800">
+                <h3 class="text-2xl font-bold text-white text-center mb-8">My Skillset</h3>
+                <div class="flex flex-col md:flex-row justify-around text-center gap-8">
+                    <!-- Programming Languages -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-300 mb-4">Programming Languages</h4>
+                        <div class="flex flex-wrap justify-center">
+                            <span class="skill-badge">Kotlin</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">C</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-300 mb-4">Tools & Technologies</h4>
+                        <div class="flex flex-wrap justify-center">
+                            <span class="skill-badge">Android Studio</span>
+                            <span class="skill-badge">Git & GitHub</span>
+                            <span class="skill-badge">Jetpack Compose</span>
+                             <span class="skill-badge">XML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- Project 1: Login JC Auth -->
+                <div class="bg-gray-800/50 border border-gray-800 rounded-xl overflow-hidden shadow-2xl flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/111827/9CA3AF?text=Login+JC+Auth" alt="Login JC Auth App Screenshot" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Login JC Auth</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            A modern Android application demonstrating a secure user authentication flow using Jetpack Compose. It features a clean, minimal UI for user registration and login.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/mayankvisuals/Login-JC-Auth" target="_blank" class="inline-block w-full text-center bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Camera App -->
+                <div class="bg-gray-800/50 border border-gray-800 rounded-xl overflow-hidden shadow-2xl flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/111827/9CA3AF?text=Camera+App" alt="Camera App Screenshot" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Camera App</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            A functional camera application that utilizes device hardware APIs to provide features like real-time preview and photo capture. A great example of working with system services on Android.
+                        </p>
+                         <div class="mt-auto">
+                             <a href="https://github.com/mayankvisuals/Znap" target="_blank" class="inline-block w-full text-center bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                I'm currently open to new opportunities and collaborations. Feel free to reach out to me!
+            </p>
+            <div class="flex justify-center items-center gap-6">
+                <a href="https://www.github.com/mayankvisuals" target="_blank" class="text-gray-500 hover:text-white transition-colors" aria-label="GitHub">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                 <a href="mailto:mayank@example.com" class="text-gray-500 hover:text-white transition-colors" aria-label="Email">
+                     <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; 2025 Mayank Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
