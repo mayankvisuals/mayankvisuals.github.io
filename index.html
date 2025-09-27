@@ -13,6 +13,7 @@
             font-family: 'Inter', sans-serif;
             background-color: #0a0a0a; /* Dark black background */
             color: #a0a0a0; /* Light grey text */
+            overflow-x: hidden; /* Horizontal scrollbar ko hatayein */
         }
         #particle-canvas {
             position: fixed;
@@ -322,10 +323,10 @@
 
         let particlesArray;
 
-        const particleCount = 70;
-        const particleColor = 'rgba(100, 100, 100, 0.3)'; // Darker, more subtle grey
-        const lineColor = 'rgba(100, 100, 100, 0.05)';   // Very faint grey lines
-
+        // Enhanced particle settings
+        const particleCount = 100; // Zyada particles
+        const particleColor = 'rgba(128, 128, 128, 0.4)'; // Thode bright particles
+        
         class Particle {
             constructor(x, y, directionX, directionY, size) {
                 this.x = x;
@@ -359,8 +360,8 @@
                 let size = Math.random() * 1.5 + 0.5;
                 let x = Math.random() * (innerWidth - size * 2) + size;
                 let y = Math.random() * (innerHeight - size * 2) + size;
-                let directionX = (Math.random() * .3) - .15;
-                let directionY = (Math.random() * .3) - .15;
+                let directionX = (Math.random() * .4) - .2; // Thodi tez speed
+                let directionY = (Math.random() * .4) - .2; // Thodi tez speed
                 particlesArray.push(new Particle(x, y, directionX, directionY, size));
             }
         }
@@ -370,9 +371,9 @@
                 for (let b = a; b < particlesArray.length; b++) {
                     let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) +
                                    ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
-                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+                    if (distance < (canvas.width / 8) * (canvas.height / 8)) { // Connection range thodi badhayi
                         let opacityValue = 1 - (distance / 20000);
-                        ctx.strokeStyle = `rgba(100, 100, 100, ${opacityValue * 0.1})`;
+                        ctx.strokeStyle = `rgba(128, 128, 128, ${opacityValue * 0.15})`; // Lines thodi visible
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -405,4 +406,5 @@
 
 </body>
 </html>
+
 
